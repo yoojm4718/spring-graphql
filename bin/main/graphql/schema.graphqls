@@ -7,6 +7,14 @@ type Query {
   전체 Post 검색
   """
   posts: [Post!]
+  """
+  ID에 따른 Post 검색
+  """
+  postById(postId: ID): Post
+  """
+  ID에 따른 User 검색
+  """
+  userById(userId: ID): User
 }
 
 type Post {

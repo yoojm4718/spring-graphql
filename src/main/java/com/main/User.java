@@ -20,9 +20,9 @@ public class User {
     }
 
     private static List<User> Users = Arrays.asList(
-            new User("1", "Elice"),
-            new User("2", "Caterpillar"),
-            new User("3", "Cheshire")
+            new User("1", "엘리스"),
+            new User("2", "캐터필러"),
+            new User("3", "체셔")
     );
 
     public static User getById(String id) {

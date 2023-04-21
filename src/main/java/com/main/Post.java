@@ -38,6 +38,15 @@ public class Post {
         return searchedPosts;
     }
 
+    public static Post getById(String postId) {
+        for(int i = 0; i < posts.size(); i++) {
+            Post currPost = posts.get(i);
+            if(currPost.getId().equals(postId)) return currPost;
+        }
+
+        return null;
+    }
+
     public static ArrayList<Post> getPosts() {
         return posts;
     }
